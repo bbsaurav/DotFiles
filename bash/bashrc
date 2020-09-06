@@ -1,0 +1,32 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+for file in /etc/bash_completion.d/* ; do
+    source "$file"
+done
+
+# User specific aliases and functions
+export LANG=en_US.UTF-8
+alias c="clear"
+alias vim="nvim"
+alias gs="git status"
+alias gd="git diff"
+alias gp="git pull"
+alias gb="git branch"
+alias gl="git log"
+
+# Bash Colors https://misc.flogisoft.com/bash/tip_colors_and_formatting
+NC="\e[0m"
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+MAGENTA="\e[35m"
+CYAN='\e[36m'
+export GIT_PS1_SHOWDIRTYSTATE=1
+#PS1="[$MAGENTA\u$NC$CYAN@$NC$YELLOW\H$NC $CYAN\W$NC $GREEN$(__git_ps1 '(%s)')$NC] \$ "
+# source git_prompt.sh
+. /usr/share/git-core/contrib/completion/git-prompt.sh
+PS1='['$MAGENTA'\u'$NC$CYAN'@'$NC$YELLOW'\H'$NC$CYAN' \W'$NC$GREEN' $(__git_ps1 "(%s)")'$NC'] \$ '

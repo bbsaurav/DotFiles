@@ -1,0 +1,20 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".git/"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  },
+  "git.enableGutters": true,
+	"python.jediEnabled": false,
+	"clangd.semanticHighlighting": false,
+	"clangd.fallbackFlags": [
+		"--gcc-toolchain=/opt/cross/el7.5-x86_64/gcc-7.3.0"
+	],
+	"clangd.arguments": [
+		"--compile-commands-dir=<directory containing compilation dtabase file>",
+		"--log=verbose"
+	]
+}
