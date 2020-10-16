@@ -12,10 +12,26 @@
   "editor.rulers": [
     80
   ],
-  "java.completion.importOrder": [
-    "java",
-    "javax",
-    "com",
-    "org"
-  ]
+  "java.home": "/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/",
+  "java.semanticHighlighting.enabled": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "maven.executable.path": "/usr/local/bin/mvn",
+  "maven.terminal.useJavaHome": true,
+  "java.completion.importOrder": [ "", "javax", "java", "#" ],
+  "java.format.enabled": true,
+  "java.format.settings.url": "https://raw.githubusercontent.com/bbsaurav/DotFiles/master/java/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.saveActions.organizeImports": true,
+  "java.maven.updateSnapshots": true,
+  "java.import.maven.enabled": true,
+  "java.autobuild.enabled": true,
+  "java.completion.enabled": true,
+  "java.import.gradle.enabled": false,
+  "java.import.gradle.wrapper.enabled": false,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/saurav.babu/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\""
 }
